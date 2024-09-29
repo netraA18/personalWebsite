@@ -1,11 +1,9 @@
-// src/AnimatedText.js
-
 import React from 'react';
 import { motion } from "framer-motion";
 
-const AnimatedText = ({textInput}) => {
+const AnimatedText = ({ textInput }) => {
 
-const text = textInput.split(" ");
+  const text = textInput.split(" ");
 
   return (
     <div className="App">
@@ -21,6 +19,7 @@ const text = textInput.split(" ");
         >
           {el}{" "}
         </motion.span>
+        
       ))}
     </div>
   );
