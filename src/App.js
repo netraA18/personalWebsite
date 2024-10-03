@@ -16,7 +16,10 @@ function App() {
         <Box p={5}>   
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" 
+            element={<Projects />}
+            
+             />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Box>
