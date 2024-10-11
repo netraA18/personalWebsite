@@ -5,11 +5,13 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.2.3",
     "@chakra-ui/react": "^2.8.2",
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.2",
+    "axios": "^1.7.7",
     "framer-motion": "^6.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

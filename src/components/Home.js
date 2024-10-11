@@ -20,8 +20,6 @@ import {
 function Home() {
     const MotionButton = motion(Button);
    
-    
-   
     const titleText = ("Hello, I'm Netra Amin - Welcome to My Portfolio!");
     const aboutMeText = "Hello, I'm Netra Amin, a sophomore at the University of Georgia majoring in computer science and pursing an applied data science certificate. " +
      "With a curious and creative mind, I've turned creative ideas into real-world projects using programming languages such as Java, Javascript, Python, and various framworks. " +
