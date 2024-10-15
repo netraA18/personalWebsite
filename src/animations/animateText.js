@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from "framer-motion";
 
+/**
+ * AnimatedText
+ *
+ * This component takes a string as input and breaks it apart into individual words,
+ * animating each word to fade in one after another.
+ *
+ * @param {string} textInput - The string to be animated.
+ * @returns {ReactElement} - A div containing the animated words.
+ */
 const AnimatedText = ({ textInput }) => {
 
   const text = textInput.split(" ");

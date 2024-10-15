@@ -1,29 +1,30 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AnimatedText from "../animations/animateText";
 import { motion } from "framer-motion";
-import { Code } from "@chakra-ui/react";
+
 import {
-    ChakraProvider,
     Box,
     VStack,
-    Grid,
-    theme,
     Button,
-    GridItem,
     HStack,
     Text
   } from '@chakra-ui/react';
 
-
-
-
+/**
+ * The Home component is the main component of the app. It renders a title, a short about me section, and links to my resume, LinkedIn, and Github.
+ * 
+ * @returns {JSX.Element} The Home component.
+ * 
+ * @example
+ * <Home />
+ */
 function Home() {
     const MotionButton = motion(Button);
    
     const titleText = ("Hello, I'm Netra Amin - Welcome to My Portfolio!");
     const aboutMeText = "Hello, I'm Netra Amin, a sophomore at the University of Georgia majoring in computer science and pursing an applied data science certificate. " +
      "With a curious and creative mind, I've turned creative ideas into real-world projects using programming languages such as Java, Javascript, Python, and various framworks. " +
-    "Looking ahead, I aspire to be a software enginner and create innovative solutions! Feel free to connect with me on LinkedIn or drop me an email! ";
+    "Looking ahead, I aspire to be a software enginner and create innovative solutions! Feel free to connect with me on LinkedIn or drop me an email (head over to contact page)! ";
 
     const handleLinkedinClick = (event) => {
         event.preventDefault();        
@@ -125,30 +126,11 @@ function Home() {
                         <AnimatedText textInput={aboutMeText} />
                     </Text>
                 </motion.div>                
-                </Box>
-
-               
-                
-      
-                
-               
-            </HStack> 
-
-           
+                </Box>             
+            </HStack>       
             </VStack>   
-        </div>
-        
-
-            
-           
-
-           
-      
-      
-      
-    )
-
-    
+        </div>   
+    )    
 }
 
 export default Home;

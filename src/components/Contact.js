@@ -6,20 +6,31 @@ import { useState } from 'react'
 import {
   FormControl,
   FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Input, Textarea, Button, Box, HStack, VStack, Stack, Code,
-
+  Input, Textarea, Button, Box, VStack, Code
 } from '@chakra-ui/react'
 
 import { Text } from '@chakra-ui/react'
 
+  /**
+   * This component renders a simple form with fields for name, email, and message.
+   * When the form is submitted, it sends the form data to emailjs.com, which is
+   * configured to send an email to the owner of this website.
+   * After the email is sent, the form fields are cleared.
+   * If the email is sent successfully, a "Hello" message is rendered.
+   */
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');  
   const [alert, showAlert] = useState(false);
 
+  /**
+   * Handles the submission of the form.
+   * It sends the form data to emailjs.com, which is configured to send an email to the owner of this website.
+   * After the email is sent, the form fields are cleared.
+   * If the email is sent successfully, a success message is rendered.
+   * @param {Event} e - The event of the form submission.
+   */
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -54,10 +65,6 @@ function Contact() {
   
   return (
     <div>
-   
-
-
-   
     <Box p={5}>
       
       <form onSubmit={handleSubmit}>

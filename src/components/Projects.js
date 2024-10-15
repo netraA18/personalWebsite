@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react';
-import { Text, Code, HStack, VStack, Card, CardHeader, Flex, GridItem, Grid, Heading, IconButton, Image, CardFooter, Button, CardBody, Stack, Divider, ButtonGroup, SimpleGrid } from '@chakra-ui/react';
-import { ChatIcon } from '@chakra-ui/icons';
+import React from 'react';
+import { Text, Code, HStack, VStack, Card, Grid, Heading, Image, CardBody, Stack, Divider} from '@chakra-ui/react';
 import {List, ListItem} from '@chakra-ui/react';
 import { ListIcon } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import WeatherChef from '../WeatherChef.png';
 import lyricsCard from '../lyricsCard.png';
 import itunesGallery from '../itunesGallery.png';
-import { Wrap, WrapItem } from '@chakra-ui/react';
 import flappy from '../flappySS.png';
 import todoSS from '../todoSS.png';
 import brickBreaker from '../brickbreaker.png';
-import { Link } from 'react-router-dom';
 
 function Cards(props) {
 
