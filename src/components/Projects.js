@@ -105,15 +105,25 @@ function Projects() {
       <VStack>
       <Code colorScheme='pink' fontSize="35px" children="Projects" />
       <HStack>
-        <Grid templateRows='1fr 1fr' 
-  templateColumns='1fr 1fr 1fr' gap={20} marginTop={10}>
-        {data.map((item, index) => {
-          console.log("Inside");
-          return(
-          <Cards key={index} title={item.title} description={item.description} language={item.language} design={item.design} wordToHighlight={item.wordToHighlight} image={item.image} projLink={item.projLink}/>
-          );
-})}
-      </Grid> 
+      <Grid
+  templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr']}
+  gap={6}
+  marginTop={10}
+>
+  {data.map((item, index) => (
+    <Cards
+      key={index}
+      title={item.title}
+      description={item.description}
+      language={item.language}
+      design={item.design}
+      wordToHighlight={item.wordToHighlight}
+      image={item.image}
+      projLink={item.projLink}
+    />
+  ))}
+</Grid>
+
       </HStack>
       
       </VStack>
